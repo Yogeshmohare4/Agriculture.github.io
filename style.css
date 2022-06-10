@@ -1,0 +1,519 @@
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            text-decoration: none;
+            word-spacing: 0.1rem;
+        }
+        
+        html {
+            font-size: 15px;
+        }
+        
+        body {
+            font-family: 'Raleway', sans-serif;
+            font-family: 'Roboto Condensed', sans-serif;
+        }
+        /*header start here*/
+        
+        .navbar {
+            box-shadow: 0px 5px 10px 0px #aaa;
+            position: fixed;
+            width: 100%;
+            background: rgb(9, 143, 231);
+            color: #000;
+            opacity: 0.85;
+            z-index: 22222;
+        }
+        
+        .navbar img {
+            width: 5%;
+            border-radius: 80%;
+            padding: 0.3rem 1rem;
+        }
+        
+        .logo {
+            position: fixed;
+            left: 3rem;
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+        
+        .navbar-container {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            height: 50px;
+        }
+        
+        .navbar-container a {
+            padding-top: 0.8rem;
+            margin-left: 2rem;
+            color: black;
+        }
+        
+        ul {
+            display: flex;
+            position: fixed;
+            top: 0.5rem;
+            right: 0rem;
+        }
+        
+        ul li {
+            margin-right: 1.5rem;
+            padding-top: 0.5rem;
+        }
+        
+        #menubar {
+            display: none;
+            position: fixed;
+            top: 0.6rem;
+            right: 2rem;
+            font-size: 1.5rem;
+            display: none;
+        }
+        /*header ends here*/
+        
+        .big-wrapper {
+            width: 100%;
+            height: 70vh;
+            background-image: url(image/pic5.jpg);
+            background-size: cover;
+        }
+        /*banner start here*/
+        
+        .banner {
+            width: 60%;
+            padding-top: 8rem;
+            text-align: center;
+            margin: 0 auto;
+        }
+        
+        .banner h1 {
+            color: white;
+            padding: 0.5rem;
+        }
+        
+        .banner p {
+            color: black;
+            font-size: 1.1rem;
+            line-height: 1.5rem;
+        }
+        
+        .banner .btn {
+            width: 7rem;
+            height: 2.7rem;
+            background: rgb(151, 151, 240);
+            color: white;
+            margin-top: 1.5rem;
+            border: 0;
+        }
+        
+        .btn:hover {
+            background-color: burlywood;
+        }
+        
+        .heading {
+            padding: 0 5%;
+            position: relative;
+            top: -2rem;
+            z-index: 1000;
+        }
+        /*banner ends here*/
+        
+        .flex-box {
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .three {
+            width: 31%;
+            height: auto;
+            position: relative;
+        }
+        
+        .text {
+            position: absolute;
+            top: 7rem;
+            left: 1.7rem;
+            right: 1rem;
+        }
+        
+        .text p {
+            position: absolute;
+            overflow-x: hidden;
+            color: #fff;
+            margin-top: 1rem;
+            font-size: 1.2rem;
+        }
+        
+        .text h1 {
+            color: #333;
+            font-size: 1.5rem;
+            margin: 0 auto;
+            text-align: center;
+            padding-right: 1rem;
+        }
+        
+        .three .image img {
+            width: 100%;
+            height: 250px;
+        }
+        /* generic head start here*/
+        
+        .head {
+            padding: 1% 4%;
+            background-color: #7562;
+        }
+        
+        .top {
+            margin: 2rem 0;
+            text-align: center;
+        }
+        
+        .top h1 {
+            font-size: 1.6rem;
+            font-weight: 200;
+            color: #333;
+            padding: 0.3rem;
+        }
+        
+        .top p {
+            font-size: 1rem;
+        }
+        
+        .parabox {
+            width: 400px;
+            margin-top: 1rem;
+        }
+        
+        .parabox h1 {
+            text-align: center;
+            padding-bottom: 2rem;
+            color: rgb(118, 131, 202);
+        }
+        
+        .para {
+            font-size: 1rem;
+            line-height: 1.5rem;
+        }
+        
+        .leftbox,
+        .rightbox {
+            width: 31%;
+        }
+        
+        .leftbox img {
+            width: 100%;
+            margin-top: 3.5rem;
+            transform: translateX(-150%);
+            animation: my-animation 1s ease-in-out forwards;
+            display: none;
+        }
+        
+        @keyframes my-animation {
+            100% {
+                transform: translate(0);
+            }
+        }
+        
+        .rightbox img {
+            width: 100%;
+            margin-top: 3.5rem;
+            transform: translateX(150%);
+            animation: my-animation 1s ease-in-out forwards;
+            display: none;
+        }
+        /*portfolio start here*/
+        
+        .portfolio {
+            width: 100%;
+            background-size: cover;
+            height: auto;
+            padding-bottom: 1.5rem;
+        }
+        
+        .port {
+            padding: 1% 4%;
+        }
+        
+        .typeagri {
+            width: 31%;
+            position: relative;
+            z-index: 1000;
+            opacity: 1;
+        }
+        
+        .typeagri h1 {
+            font-size: 1.5rem;
+            color: #222;
+            font-weight: 300;
+            padding: 0.5rem 0;
+            text-align: center;
+        }
+        
+        .typeagri p {
+            font-size: 1rem;
+            font-weight: 500;
+            line-height: 1.5rem;
+            color: #333;
+        }
+        
+        .agriimage {
+            padding-bottom: 0.6rem;
+        }
+        
+        .typeagri img {
+            width: 100%;
+        }
+        
+        .typeagri .btn {
+            width: 7rem;
+            height: 2rem;
+            color: rgb(32, 32, 224);
+            border: 0;
+            border-radius: 5rem;
+            margin-top: 1rem;
+            padding: 0.5rem;
+            font-family: 'Roboto Condensed', sans-serif;
+            font-size: 1rem;
+            text-align: center;
+        }
+        /*portfolio ends here*/
+        
+        .abtn {
+            color: blue;
+            padding: 1rem 0;
+            font-size: 1.2rem;
+            font-weight: 500;
+            margin-top: 1.2rem;
+        }
+        /*gneric start here*/
+        
+        .generic {
+            padding-bottom: 2rem;
+            background: #7562;
+        }
+        
+        .lastbox {
+            width: 31%;
+        }
+        
+        .lastbox img {
+            width: 100%;
+            margin: 1rem 0;
+        }
+        
+        .lastbox h1 {
+            font-size: 1.5rem;
+            color: rgb(141, 141, 226);
+            font-weight: 500;
+            padding-bottom: 0.5rem;
+        }
+        
+        .lastbox p {
+            font-size: 1rem;
+            line-height: 1.5rem;
+            color: #333;
+            font-weight: 500;
+            padding-bottom: 0.5rem;
+        }
+        /*gneric ends here*/
+        /*contact start here*/
+        
+        .flex-item {
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .contact {
+            background: #3333;
+            width: 100%;
+            height: auto;
+            padding-bottom: 2rem;
+        }
+        
+        .info {
+            padding: 2% 4%;
+        }
+        
+        .agri-info {
+            width: 45%;
+            margin-top: 1rem;
+        }
+        
+        .agri-info h1 {
+            font-size: 1.3rem;
+            color: #978597;
+            margin-bottom: 1.2rem;
+        }
+        
+        .agri-info a {
+            padding: 2rem 0;
+            font-size: 1.1rem;
+        }
+        
+        .agri-info p {
+            font-size: 1rem;
+            color: #111;
+            line-height: 1.5rem;
+        }
+        
+        .lefts {
+            width: 45%;
+            margin: 0 auto;
+            margin-left: 2rem;
+        }
+        
+        .lefts h1 {
+            font-size: 1.5rem;
+            color: #978597;
+            padding: 1rem 0;
+        }
+        
+        .box {
+            padding: 0.3rem;
+            background: #333;
+            color: white;
+            width: 100%;
+        }
+        /*contact ends here*/
+        /*footer start here*/
+        
+        footer {
+            background: #111;
+            height: auto;
+            padding-bottom: 3rem;
+            overflow: hidden;
+            color: white;
+            margin-top: 2rem !important;
+        }
+        
+        .footerlast {
+            padding: 1% 4%;
+        }
+        
+        .footerlast .company h1 {
+            font-size: 1.5rem;
+            padding: 1rem 0;
+            color: #aaa;
+            text-transform: capitalize;
+        }
+        
+        .footerlast .company p {
+            font-size: 1.1rem;
+        }
+        
+        .footerlast .company i {
+            font-size: 1.1rem;
+            color: #aaa;
+            padding-top: 1.5rem;
+            margin-right: 1rem;
+        }
+        
+        .footerlast .company h4 {
+            font-size: 0.9rem;
+            margin-top: 1rem;
+            margin-right: 4rem;
+        }
+        /*footer ends here*/
+        
+        @media only screen and ( max-width:800px) {
+            #menubar {
+                display: block;
+            }
+            ul {
+                display: none;
+                position: absolute;
+                top: 3rem;
+                padding: 1rem 0rem;
+                background: yellow;
+                width: 100%;
+                margin: 0 auto;
+                text-align: center;
+                margin-top: 1.6rem;
+            }
+            ul li {
+                padding: 1.2rem 0;
+                margin-right: 0;
+                border-bottom: 0.5rem solid lightskyblue;
+            }
+            ul li a {
+                color: black;
+                font-weight: 700;
+                font-size: 1.1rem;
+                z-index: 111111;
+            }
+        }
+        
+        @media only screen and ( max-width: 768px) {
+            .heading {
+                position: relative;
+                top: 0;
+            }
+            .flex-box {
+                flex-wrap: wrap
+            }
+            .three {
+                margin: 0 auto;
+                margin-top: 1rem;
+                width: 500px;
+            }
+            .leftbox,
+            .rightbox {
+                width: 500px;
+            }
+            .leftbox,
+            .rightbox,
+            .parabox {
+                margin: 0 auto;
+                margin-top: 0rem;
+            }
+            .leftbox img {
+                margin-top: 0.6rem;
+            }
+            .rightbox img {
+                margin-top: 0.6rem;
+            }
+            .typeagri {
+                width: 500px;
+                margin: 0 auto;
+                margin-bottom: 1.2rem;
+            }
+            .typeagri h1 {
+                padding-bottom: 1.3rem;
+            }
+            .lastbox {
+                width: 500px;
+                margin: 0 auto;
+            }
+            .agri-info {
+                width: 500px;
+                margin: 0 auto;
+                margin-bottom: 2rem;
+                padding-top: 1.5rem;
+            }
+            html {
+                font-size: 12px;
+            }
+            .banner {
+                width: 90%;
+            }
+        }
+        
+        @media only screen and (max-width:730px) {
+            .flex-item {
+                flex-wrap: wrap;
+            }
+            .lefts {
+                width: 100%;
+                margin: 0 auto;
+            }
+            .lefts .box {
+                width: 100%;
+            }
+            .logo {
+                position: fixed;
+                top: 0.4rem;
+            }
+        }
